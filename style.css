@@ -59,7 +59,7 @@ nav{
 
 }
 
-@media screeb abd (max-width: 800px){
+@media screen and (max-width: 800px){
     #content{
         display: block;
         
@@ -67,4 +67,41 @@ nav{
     #leftside, #center, #rightside {
         width: 100%;
     }
+    #center{
+        flex-grow: 1;
+    }
+    #rightside{
+        display: none;
+    }
+}
+
+
+.menu{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu li{
+    display: inline-block;
+    border-right: 1px solid black;
+}
+
+
+
+.menu li a{
+    display: block;
+    color: white;
+    padding: 5px 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu li a:hover{
+    background-color: black;
+    color: white;
+}
+
+.menu li:last-child{
+    border-bottom: none;
 }
